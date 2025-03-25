@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+<link rel="manifest" href="assets/site.webmanifest">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy | Viberance</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="assets/logo.png" alt="Viberance Logo" />
+        <span class="logo-text fun-font">Viberance</span>
+      </div>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="faqs.html">FAQs</a>
+        <a href="order.html" class="nav-order-btn fun-font">Order Now</a>
+    </nav>
+    </header>
+
+    <section class="policy-section">
+      <div class="policy-container">
+        <h1 class="fun-font">Privacy Policy</h1>
+        <div class="last-updated">
+          Last Updated: <span id="current-date"></span>
+        </div>
+
+        <div class="policy-content">
+          <div class="policy-intro">
+            <p>
+              By using our services, you agree to this Privacy Policy. Thanks
+              for trusting us!
+            </p>
+          </div>
+
+          <div class="policy-card">
+            <h2>
+              <i class="fas fa-shield-alt policy-icon"></i> How We Handle Your
+              Information
+            </h2>
+            <div class="policy-details">
+              <p>
+                We collect basic information (name, email, design preferences)
+                to:
+              </p>
+              <ul>
+                <li>Create your custom lockscreen</li>
+                <li>Communicate with you about your design</li>
+                <li>Improve our services</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="policy-card">
+            <h2>
+              <i class="fas fa-lock policy-icon"></i> Design Sharing Policy
+            </h2>
+            <div class="policy-details">
+              <p>
+                We'll only share your design on Pinterest with your explicit
+                permission.
+              </p>
+              <p class="highlight-text">
+                Let us know if you prefer it to remain private!
+              </p>
+            </div>
+          </div>
+
+          <div class="policy-card">
+            <h2>
+              <i class="fas fa-question-circle policy-icon"></i> Your Rights
+            </h2>
+            <div class="policy-details">
+              <p>
+                You can contact us anytime with concerns about your data at
+                <a href="mailto:aryasjaiswal@gmail.com"
+                  >aryasjaiswal@gmail.com</a
+                >.
+              </p>
+            </div>
+          </div>
+
+          <div class="policy-note">
+            <p>
+              We're committed to keeping your information safe and respecting
+              your privacy. Thank you for being part of the Viberance community!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <!-- Same footer as other pages -->
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script>
+      // Add current date
+      document.getElementById("current-date").textContent =
+        new Date().toLocaleDateString("en-US", {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        });
+    </script>
+  </body>
+</html>
