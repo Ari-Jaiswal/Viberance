@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+<link rel="manifest" href="assets/site.webmanifest">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terms & Conditions | Viberance</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="assets/logo.png" alt="Viberance Logo" />
+        <span class="logo-text fun-font">Viberance</span>
+      </div>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="faqs.html">FAQs</a>
+        <a href="order.html" class="nav-order-btn fun-font">Order Now</a>
+    </nav>
+    </header>
+
+    <section class="terms-section">
+      <div class="terms-container">
+        <h1 class="fun-font">Terms & Conditions</h1>
+        <div class="last-updated">
+          Last Updated: <span id="current-date"></span>
+        </div>
+
+        <div class="terms-intro">
+          <p>
+            By using our site and requesting a custom lockscreen design, you
+            agree to the following:
+          </p>
+        </div>
+
+        <div class="terms-grid">
+          <!-- Term 1 -->
+          <div class="term-card">
+            <div class="term-icon">
+              <i class="fas fa-gift"></i>
+            </div>
+            <h3>Free Designs</h3>
+            <p>
+              All of our lockscreen designs are free! We're here to create
+              something awesome just for you, no charge.
+            </p>
+          </div>
+
+          <!-- Term 2 -->
+          <div class="term-card">
+            <div class="term-icon">
+              <i class="fas fa-pencil-alt"></i>
+            </div>
+            <h3>Design Requests</h3>
+            <p>
+              Please be clear about what you want in your design. If something
+              needs tweaking, feel free to ask for changes – we're happy to
+              help!
+            </p>
+          </div>
+
+          <!-- Term 3 -->
+          <div class="term-card">
+            <div class="term-icon">
+              <i class="fas fa-exchange-alt"></i>
+            </div>
+            <h3>No Returns or Refunds</h3>
+            <p>
+              Since our designs are free, we don't accept returns or refunds.
+              But if you're not happy with your design, let us know, and we'll
+              make changes to get it just right!
+            </p>
+          </div>
+
+          <!-- Term 4 -->
+          <div class="term-card">
+            <div class="term-icon">
+              <i class="fas fa-user-shield"></i>
+            </div>
+            <h3>Use of Designs</h3>
+            <p>
+              You're welcome to use the custom lockscreen design for personal
+              use only. Please don't sell or distribute the designs.
+            </p>
+          </div>
+
+          <!-- Term 5 -->
+          <div class="term-card">
+            <div class="term-icon">
+                <i class="fab fa-pinterest"></i>
+            </div>
+            <h3>Posting on Pinterest</h3>
+            <p>We love sharing our designs on Pinterest! Follow me at <strong>@Arya_SJ</strong> for more designs.</p>
+        </div>
+
+          <!-- Term 6 -->
+          <div class="term-card">
+            <div class="term-icon">
+              <i class="fas fa-heart"></i>
+            </div>
+            <h3>Appropriate Requests</h3>
+            <p>
+              We ask that all design requests be appropriate and respectful. We
+              will not create or share any designs that are inappropriate or
+              offensive.
+            </p>
+          </div>
+
+          <!-- Term 7 -->
+          <div class="term-card">
+            <div class="term-icon">
+              <i class="fas fa-comments"></i>
+            </div>
+            <h3>Communication</h3>
+            <p>
+              We'll keep in touch through the contact info you provide. If you
+              ever have questions or need help, just reach out!
+            </p>
+          </div>
+        </div>
+
+        <div class="terms-closing">
+          <p>
+            By using our services, you agree to these terms. Thanks for being
+            awesome and choosing us!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <!-- Same footer as other pages -->
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script>
+      // Add current date
+      document.getElementById("current-date").textContent =
+        new Date().toLocaleDateString("en-US", {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        });
+    </script>
+  </body>
+</html>

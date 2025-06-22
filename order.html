@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/site.webmanifest" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Custom Wallpaper | Viberance</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="assets/logo.png" alt="Viberance Logo" />
+        <span class="logo-text fun-font">Viberance</span>
+      </div>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="faqs.html">FAQs</a>
+        <a href="order.html" class="nav-order-btn fun-font">Order Now</a>
+      </nav>
+    </header>
+
+    <section class="order-section">
+      <h1 class="fun-font">Create Your Custom Lock Screen</h1>
+      <p class="subtitle">
+        Fill out the form below to get started with your custom design
+      </p>
+
+      <!-- Form with your Formspree ID -->
+      <form
+        id="orderForm"
+        class="order-form"
+        action="https://formspree.io/f/myzjdqja"
+        method="POST"
+        enctype="multipart/form-data"
+        <!--
+        Required
+        if
+        uploading
+        files
+        --
+      >
+        <div class="form-section">
+          <h2>Your Information</h2>
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="contact-method">Preferred Contact Method</label>
+            <select id="contact-method" name="contact-method">
+              <option value="email">Email</option>
+              <option value="discord">Discord</option>
+              <option value="whatsapp">WhatsApp</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="contact-info">Your Discord/WhatsApp</label>
+            <input
+              type="text"
+              id="contact-info"
+              name="contact-info"
+              placeholder="smiley060112 or +1234567890"
+            />
+          </div>
+        </div>
+
+        <div class="form-section">
+          <h2>Design Preferences</h2>
+          <div class="form-group">
+            <label for="style">Preferred Style</label>
+            <select id="style" name="style" required>
+              <option value="">Select a style</option>
+              <option value="pastel">Pastel</option>
+              <option value="neon">Neon</option>
+              <option value="abstract">Abstract</option>
+              <option value="nature">Nature</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="colors">Preferred Colors</label>
+            <input
+              type="text"
+              id="colors"
+              name="colors"
+              placeholder="e.g., pink, blue, purple"
+            />
+          </div>
+          <div class="form-group">
+            <label for="theme">Theme or Concept</label>
+            <input
+              type="text"
+              id="theme"
+              name="theme"
+              placeholder="e.g., space, flowers, anime"
+            />
+          </div>
+          <div class="form-group">
+            <label for="text">Text to Include (if any)</label>
+            <input
+              type="text"
+              id="text"
+              name="text"
+              placeholder="Your name, quote, etc."
+            />
+          </div>
+        </div>
+
+        <!-- Simplified Device Section -->
+        <div class="form-section">
+          <h2>Device Details</h2>
+          <div class="form-group">
+            <label for="device-type">Which device is this for?</label>
+            <select id="device-type" name="device-type" required>
+              <option value="">Select device type</option>
+              <option value="phone">Phone</option>
+              <option value="desktop">Desktop</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <h2>Additional Details</h2>
+          <div class="form-group full-width">
+            <label for="details">Any special requests or inspiration?</label>
+            <textarea id="details" name="details" rows="4"></textarea>
+          </div>
+          <div class="form-group full-width">
+            <label for="privacy">Pinterest Sharing Preference</label>
+            <select id="privacy" name="privacy">
+              <option value="public">
+                You may share my design on Pinterest
+              </option>
+              <option value="private">Please keep my design private</option>
+            </select>
+          </div>
+          <div class="form-group full-width">
+            <label for="files">Upload Inspiration Images (optional)</label>
+            <input
+              type="file"
+              id="files"
+              name="files"
+              multiple
+              accept="image/*"
+            />
+          </div>
+        </div>
+
+        <div class="form-submit">
+          <button type="submit" class="submit-btn fun-font">
+            Submit Order
+          </button>
+          <p class="form-note">
+            By submitting, you agree to our
+            <a href="terms.html">Terms of Service</a>
+          </p>
+        </div>
+      </form>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3 class="fun-font">Viberance</h3>
+          <p>Custom lock screens that help you express your unique style.</p>
+        </div>
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms & Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Viberance. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
